@@ -75,7 +75,7 @@ public final class PanoramicScreenshots {
 				}
 				NativeImage saved = new NativeImage(width, height, false);
 				screenshot.resizeSubRectTo(int_3, int_4, width, height, saved);
-				saved.writeFile(folder.resolve("panorama_" + i + ".png"));
+				saved.writeTo(folder.resolve("panorama_" + i + ".png"));
 			} catch (IOException var27) {
 				PanoramicScreenshots.LOGGER.warn("Couldn't save screenshot", var27);
 			} finally {

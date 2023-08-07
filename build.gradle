@@ -1,8 +1,11 @@
 plugins {
-	id 'fabric-loom' version '0.9-SNAPSHOT'
+	id 'fabric-loom' version '0.10-SNAPSHOT'
 }
 
 apply from: 'https://raw.githubusercontent.com/TerraformersMC/GradleScripts/2.1/ferry.gradle'
+
+sourceCompatibility = JavaVersion.VERSION_17
+targetCompatibility = JavaVersion.VERSION_17
 
 dependencies {
 	minecraft "com.mojang:minecraft:$project.minecraft_version"
